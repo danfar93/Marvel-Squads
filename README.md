@@ -1,6 +1,6 @@
 # Marvel Squads
 
-![Marvel Squads](https://github.com/danfar93)
+![Marvel Squads](https://github.com/danfar93/Marvel-Squads/blob/master/marvel-squad.png)
 
 
 ## 📱 Deliverable Requirements
