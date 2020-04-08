@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z4w-4I-1yh">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="eag-gx-U8k">
+            <objects>
+                <viewController id="z4w-4I-1yh" customClass="HomeViewController" customModule="Marvel_Squads" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LW0-IE-LOu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marvel-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Cad-hJ-agY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marvel-logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Vg-G4-d8V">
+                                <rect key="frame" x="105" y="71" width="165" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="sl2-B0-anX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="039-8V-kDE">
+                                <rect key="frame" x="24" y="556" width="326" height="52"/>
+                                <color key="backgroundColor" red="0.96031099557876587" green="0.090829707682132721" blue="0.011935729533433914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="eo7-qM-Nxv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Enter Marvel Squads">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterMarvelSquadsPressed:" destination="z4w-4I-1yh" eventType="touchUpInside" id="My8-uo-Wri"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ironman" translatesAutoresizingMaskIntoConstraints="NO" id="zjG-7R-XPE">
+                                <rect key="frame" x="20" y="189" width="334" height="301"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zjG-7R-XPE" firstAttribute="centerX" secondItem="LW0-IE-LOu" secondAttribute="centerX" id="0Su-DE-M4e"/>
+                            <constraint firstItem="zjG-7R-XPE" firstAttribute="leading" secondItem="EN3-qB-iQm" secondAttribute="leading" constant="20" id="BOi-1M-bnh"/>
+                            <constraint firstItem="0Vg-G4-d8V" firstAttribute="leading" secondItem="EN3-qB-iQm" secondAttribute="leading" constant="105" id="CoY-nc-h2M"/>
+                            <constraint firstItem="0Vg-G4-d8V" firstAttribute="top" secondItem="EN3-qB-iQm" secondAttribute="top" constant="71" id="FVM-RM-gef"/>
+                            <constraint firstItem="Cad-hJ-agY" firstAttribute="top" secondItem="EN3-qB-iQm" secondAttribute="top" id="HkV-rp-NS5"/>
+                            <constraint firstItem="EN3-qB-iQm" firstAttribute="bottom" secondItem="039-8V-kDE" secondAttribute="bottom" constant="59" id="P77-rM-JmN"/>
+                            <constraint firstItem="0Vg-G4-d8V" firstAttribute="centerX" secondItem="zjG-7R-XPE" secondAttribute="centerX" id="R4o-T3-DME"/>
+                            <constraint firstItem="zjG-7R-XPE" firstAttribute="centerX" secondItem="039-8V-kDE" secondAttribute="centerX" id="Rn2-CE-XJq"/>
+                            <constraint firstItem="Cad-hJ-agY" firstAttribute="bottom" secondItem="EN3-qB-iQm" secondAttribute="bottom" id="VUc-1q-Fto"/>
+                            <constraint firstItem="039-8V-kDE" firstAttribute="leading" secondItem="EN3-qB-iQm" secondAttribute="leading" constant="24" id="YGE-CY-am6"/>
+                            <constraint firstItem="039-8V-kDE" firstAttribute="top" secondItem="zjG-7R-XPE" secondAttribute="bottom" constant="66" id="e3u-9C-3c3"/>
+                            <constraint firstItem="Cad-hJ-agY" firstAttribute="centerX" secondItem="zjG-7R-XPE" secondAttribute="centerX" id="u5R-vD-TNj"/>
+                            <constraint firstItem="zjG-7R-XPE" firstAttribute="top" secondItem="0Vg-G4-d8V" secondAttribute="bottom" constant="62" id="xeB-D4-iSi"/>
+                            <constraint firstItem="Cad-hJ-agY" firstAttribute="leading" secondItem="EN3-qB-iQm" secondAttribute="leading" id="y0I-sn-cjz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EN3-qB-iQm"/>
+                    </view>
+                    <connections>
+                        <outlet property="enterMarvelSquadsButton" destination="039-8V-kDE" id="0Cv-AY-5n6"/>
+                        <segue destination="ssm-Ro-EAS" kind="presentation" identifier="enterMarvelSquadsSegue" modalPresentationStyle="overFullScreen" id="Pet-Xe-ZOL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Fv-QU-wlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1172" y="-73.313343328335833"/>
+        </scene>
+        <!--Superhero List View Controller-->
+        <scene sceneID="IXR-PL-yNv">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="ssm-Ro-EAS" customClass="SuperheroListViewController" customModule="Marvel_Squads" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfQ-ok-7dE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIp-B0-nnh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                <color key="backgroundColor" red="0.14821958541870117" green="0.1636645495891571" blue="0.19262391328811646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qFh-Ke-3Hr">
+                                <rect key="frame" x="0.0" y="206" width="375" height="461"/>
+                                <color key="backgroundColor" red="0.14821958541870117" green="0.1636645495891571" blue="0.19262391328811646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="461" id="EF9-h7-GhO"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="superheroCell" rowHeight="135" id="VeY-gZ-8XY" customClass="SuperheroCell" customModule="Marvel_Squads" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="135"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VeY-gZ-8XY" id="q6X-EQ-u5w">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ci-zX-cMV">
+                                                    <rect key="frame" x="15" y="14" width="345" height="107"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon-default" translatesAutoresizingMaskIntoConstraints="NO" id="kLs-qk-Nuh">
+                                                            <rect key="frame" x="18" y="15" width="76" height="76"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="76" id="sMJ-ij-Obp"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Superhero" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VH-lR-VyC">
+                                                            <rect key="frame" x="112" y="15" width="196" height="76"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="196" id="xma-ND-hbN"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="jJh-nY-ghI">
+                                                            <rect key="frame" x="310" y="41" width="20" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="7m1-NJ-y25"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.21103990077972412" green="0.23066309094429016" blue="0.27221035957336426" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="jJh-nY-ghI" secondAttribute="trailing" constant="15" id="Dee-Qa-ROw"/>
+                                                        <constraint firstItem="jJh-nY-ghI" firstAttribute="top" secondItem="7ci-zX-cMV" secondAttribute="top" constant="41" id="G1D-MQ-Gg6"/>
+                                                        <constraint firstItem="2VH-lR-VyC" firstAttribute="leading" secondItem="kLs-qk-Nuh" secondAttribute="trailing" constant="18" id="SJm-F5-eui"/>
+                                                        <constraint firstItem="2VH-lR-VyC" firstAttribute="centerY" secondItem="jJh-nY-ghI" secondAttribute="centerY" id="c5P-uW-THb"/>
+                                                        <constraint firstItem="kLs-qk-Nuh" firstAttribute="top" secondItem="7ci-zX-cMV" secondAttribute="top" constant="15" id="cZM-ZK-PDQ"/>
+                                                        <constraint firstItem="kLs-qk-Nuh" firstAttribute="bottom" secondItem="2VH-lR-VyC" secondAttribute="bottom" id="e2k-tz-3tQ"/>
+                                                        <constraint firstItem="jJh-nY-ghI" firstAttribute="leading" secondItem="2VH-lR-VyC" secondAttribute="trailing" constant="2" id="kAX-Gl-7mp"/>
+                                                        <constraint firstItem="kLs-qk-Nuh" firstAttribute="centerY" secondItem="7ci-zX-cMV" secondAttribute="centerY" id="kL6-hl-GLD"/>
+                                                        <constraint firstItem="kLs-qk-Nuh" firstAttribute="top" secondItem="2VH-lR-VyC" secondAttribute="top" id="rIo-W6-ZcQ"/>
+                                                        <constraint firstItem="kLs-qk-Nuh" firstAttribute="leading" secondItem="7ci-zX-cMV" secondAttribute="leading" constant="18" id="yyr-ec-kpZ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7ci-zX-cMV" firstAttribute="leading" secondItem="q6X-EQ-u5w" secondAttribute="leadingMargin" id="MHy-U3-bF3"/>
+                                                <constraint firstItem="7ci-zX-cMV" firstAttribute="centerY" secondItem="q6X-EQ-u5w" secondAttribute="centerY" id="T9V-p3-j8l"/>
+                                                <constraint firstItem="7ci-zX-cMV" firstAttribute="top" secondItem="q6X-EQ-u5w" secondAttribute="topMargin" constant="3" id="XNz-v8-Ggt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.13290053606033325" green="0.14468061923980713" blue="0.1696113646030426" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="cellBackgroundView" destination="7ci-zX-cMV" id="Gha-SN-oDn"/>
+                                            <outlet property="superheroImageView" destination="kLs-qk-Nuh" id="rLO-z7-Rzs"/>
+                                            <outlet property="superheroNameLabel" destination="2VH-lR-VyC" id="bJz-hk-4wj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ssm-Ro-EAS" id="fgz-6e-pyV"/>
+                                    <outlet property="delegate" destination="ssm-Ro-EAS" id="daq-w3-asZ"/>
+                                </connections>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mLB-ET-YBt">
+                                <rect key="frame" x="0.0" y="97" width="375" height="109"/>
+                                <color key="backgroundColor" red="0.14821958541870117" green="0.1636645495891571" blue="0.19262391328811646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="JhZ-f5-908"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="4" minimumInteritemSpacing="4" id="Cdn-c1-sr1">
+                                    <size key="itemSize" width="103" height="99"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="squadMemberCell" id="g7C-Im-RXg" customClass="SquadMemberCell" customModule="Marvel_Squads" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5" width="103" height="99"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGt-kj-Jhz">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="99"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superhero" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9Y-4r-S6d">
+                                                    <rect key="frame" x="4" y="58" width="95" height="39"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="39" id="uNP-V6-Vnu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon-default" translatesAutoresizingMaskIntoConstraints="NO" id="5HY-lh-LYr">
+                                                    <rect key="frame" x="25" y="4" width="54" height="54"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5HY-lh-LYr" firstAttribute="centerX" secondItem="G9Y-4r-S6d" secondAttribute="centerX" id="5rG-sf-bJh"/>
+                                                <constraint firstAttribute="bottom" secondItem="G9Y-4r-S6d" secondAttribute="bottom" constant="2" id="5zw-Ay-me4"/>
+                                                <constraint firstItem="G9Y-4r-S6d" firstAttribute="leading" secondItem="WGt-kj-Jhz" secondAttribute="leading" constant="4" id="F4y-Mv-pRE"/>
+                                                <constraint firstItem="5HY-lh-LYr" firstAttribute="centerX" secondItem="WGt-kj-Jhz" secondAttribute="centerX" id="NmP-tB-l3n"/>
+                                                <constraint firstItem="5HY-lh-LYr" firstAttribute="leading" secondItem="WGt-kj-Jhz" secondAttribute="leading" constant="25" id="aEw-lS-6YF"/>
+                                                <constraint firstItem="G9Y-4r-S6d" firstAttribute="top" secondItem="5HY-lh-LYr" secondAttribute="bottom" id="nfl-eB-JOB"/>
+                                                <constraint firstItem="5HY-lh-LYr" firstAttribute="top" secondItem="WGt-kj-Jhz" secondAttribute="top" constant="4" id="tgz-qV-ytG"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="WGt-kj-Jhz" secondAttribute="bottom" constant="-8" id="1A9-lV-hyH"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="WGt-kj-Jhz" secondAttribute="trailing" constant="-8" id="bcF-IS-Cju"/>
+                                            <constraint firstItem="WGt-kj-Jhz" firstAttribute="leading" secondItem="g7C-Im-RXg" secondAttribute="leadingMargin" constant="-8" id="jCb-Xy-bHS"/>
+                                            <constraint firstItem="WGt-kj-Jhz" firstAttribute="top" secondItem="g7C-Im-RXg" secondAttribute="topMargin" constant="-8" id="viI-Na-O29"/>
+                                        </constraints>
+                                        <size key="customSize" width="103" height="99"/>
+                                        <connections>
+                                            <outlet property="superheroImageView" destination="5HY-lh-LYr" id="4NS-Xk-ds1"/>
+                                            <outlet property="superheroNameLabel" destination="G9Y-4r-S6d" id="7Fr-CA-5bi"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ssm-Ro-EAS" id="VFA-Zb-VJ3"/>
+                                    <outlet property="delegate" destination="ssm-Ro-EAS" id="o3J-Y2-reu"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qFh-Ke-3Hr" firstAttribute="top" secondItem="mLB-ET-YBt" secondAttribute="bottom" id="MLC-kZ-8iA"/>
+                            <constraint firstItem="mLB-ET-YBt" firstAttribute="top" secondItem="nIp-B0-nnh" secondAttribute="bottom" constant="1" id="OMV-jT-4Tp"/>
+                            <constraint firstItem="mLB-ET-YBt" firstAttribute="trailing" secondItem="qFh-Ke-3Hr" secondAttribute="trailing" id="YOD-Yv-xSC"/>
+                            <constraint firstItem="mLB-ET-YBt" firstAttribute="leading" secondItem="qFh-Ke-3Hr" secondAttribute="leading" id="c8e-lW-HS5"/>
+                            <constraint firstItem="nIp-B0-nnh" firstAttribute="leading" secondItem="mLB-ET-YBt" secondAttribute="leading" id="e2t-Qb-PZ1"/>
+                            <constraint firstItem="qFh-Ke-3Hr" firstAttribute="bottom" secondItem="e8o-nX-HeO" secondAttribute="bottom" id="em2-h9-d0P"/>
+                            <constraint firstItem="nIp-B0-nnh" firstAttribute="centerX" secondItem="sfQ-ok-7dE" secondAttribute="centerX" id="keR-hZ-ebv"/>
+                            <constraint firstItem="nIp-B0-nnh" firstAttribute="leading" secondItem="e8o-nX-HeO" secondAttribute="leading" id="udB-VY-6oN"/>
+                            <constraint firstItem="nIp-B0-nnh" firstAttribute="top" secondItem="e8o-nX-HeO" secondAttribute="top" id="uv8-91-oeU"/>
+                            <constraint firstItem="nIp-B0-nnh" firstAttribute="trailing" secondItem="mLB-ET-YBt" secondAttribute="trailing" id="z3w-QM-9fz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e8o-nX-HeO"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerView" destination="nIp-B0-nnh" id="mTq-Dc-S1B"/>
+                        <outlet property="squadCollectionView" destination="mLB-ET-YBt" id="GfB-34-zQ2"/>
+                        <outlet property="superheroTableView" destination="qFh-Ke-3Hr" id="Nc1-dV-V5C"/>
+                        <segue destination="E3G-jG-cy1" kind="presentation" identifier="superheroDetailSegue" id="No9-f8-L0v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaH-Rg-igU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298.39999999999998" y="-73.313343328335833"/>
+        </scene>
+        <!--Superhero Detail View Controller-->
+        <scene sceneID="10y-bt-YEN">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="E3G-jG-cy1" customClass="SuperheroDetailViewController" customModule="Marvel_Squads" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FsP-Ry-qc3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="GnD-HA-qyv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Superhero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE7-p7-NUO">
+                                <rect key="frame" x="24" y="232" width="326" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3ZD-iZ-hck"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNP-sM-Gyq">
+                                <rect key="frame" x="24" y="339" width="326" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="eMg-l4-eeF"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel tortor et nibh elementum ultrices. Nam ut diam fermentum, tristique dolor eu, condimentum justo. </string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8b-8d-Yj8">
+                                <rect key="frame" x="24" y="273" width="326" height="52"/>
+                                <color key="backgroundColor" red="0.95194810628890991" green="0.043908126652240753" blue="0.039279360324144363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="8MH-JJ-H3I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="💪 Recruit to Squad">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recruitButtonPressed:" destination="E3G-jG-cy1" eventType="touchUpInside" id="oqW-Jc-Ypg"/>
+                                </connections>
+                            </button>
+                            <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PNM-pj-h3B">
+                                <rect key="frame" x="16" y="25" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="ssm-Ro-EAS" kind="presentation" id="EIN-dl-cZp"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Y0-zD-i36">
+                                <rect key="frame" x="0.0" y="472" width="375" height="195"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="ejl-bU-39i"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ib5-7V-wE9">
+                                    <size key="itemSize" width="178" height="183"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="comicCell" id="zGd-av-W8P" customClass="ComicCell" customModule="Marvel_Squads" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="6" width="178" height="183"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wqO-1z-vx5">
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="183"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comic-default" translatesAutoresizingMaskIntoConstraints="NO" id="c4j-x7-0t6">
+                                                    <rect key="frame" x="38" y="11" width="102" height="114"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marvel Comic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL7-l5-1qb">
+                                                    <rect key="frame" x="4" y="130" width="170" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="2iD-It-kAD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="c4j-x7-0t6" firstAttribute="centerX" secondItem="NL7-l5-1qb" secondAttribute="centerX" id="8MA-12-zf4"/>
+                                                <constraint firstAttribute="bottom" secondItem="NL7-l5-1qb" secondAttribute="bottom" constant="5" id="MB3-r9-r8V"/>
+                                                <constraint firstItem="NL7-l5-1qb" firstAttribute="leading" secondItem="wqO-1z-vx5" secondAttribute="leading" constant="4" id="O5Q-zj-KxS"/>
+                                                <constraint firstItem="c4j-x7-0t6" firstAttribute="centerX" secondItem="wqO-1z-vx5" secondAttribute="centerX" id="PIa-eh-vK4"/>
+                                                <constraint firstItem="NL7-l5-1qb" firstAttribute="top" secondItem="c4j-x7-0t6" secondAttribute="bottom" constant="5" id="Z2x-F4-iQ9"/>
+                                                <constraint firstItem="c4j-x7-0t6" firstAttribute="leading" secondItem="wqO-1z-vx5" secondAttribute="leading" constant="38" id="het-7l-Ca8"/>
+                                                <constraint firstItem="c4j-x7-0t6" firstAttribute="top" secondItem="wqO-1z-vx5" secondAttribute="top" constant="11" id="zLt-YS-ANV"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="178" height="183"/>
+                                        <connections>
+                                            <outlet property="comicCoverImageView" destination="c4j-x7-0t6" id="MbU-yB-MJ7"/>
+                                            <outlet property="comicTitleLabel" destination="NL7-l5-1qb" id="daZ-LL-VHr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="E3G-jG-cy1" id="w9q-7v-Iqx"/>
+                                    <outlet property="delegate" destination="E3G-jG-cy1" id="hXv-bd-4vS"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last appeared in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ip-TE-TY1">
+                                <rect key="frame" x="24" y="428" width="325" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="pFG-JV-mGl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13290053606033325" green="0.14468061923980713" blue="0.1696113646030426" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GnD-HA-qyv" firstAttribute="top" secondItem="JeD-lc-XtW" secondAttribute="top" id="1lM-yh-O4s"/>
+                            <constraint firstItem="GnD-HA-qyv" firstAttribute="trailing" secondItem="8Y0-zD-i36" secondAttribute="trailing" id="1yb-pA-seY"/>
+                            <constraint firstItem="K8b-8d-Yj8" firstAttribute="top" secondItem="bE7-p7-NUO" secondAttribute="bottom" constant="9" id="24D-vz-hIc"/>
+                            <constraint firstItem="uNP-sM-Gyq" firstAttribute="centerX" secondItem="4ip-TE-TY1" secondAttribute="centerX" id="4rb-so-hFv"/>
+                            <constraint firstItem="K8b-8d-Yj8" firstAttribute="trailing" secondItem="uNP-sM-Gyq" secondAttribute="trailing" id="75f-3R-RxZ"/>
+                            <constraint firstItem="bE7-p7-NUO" firstAttribute="leading" secondItem="K8b-8d-Yj8" secondAttribute="leading" id="8Hc-2g-7ER"/>
+                            <constraint firstItem="8Y0-zD-i36" firstAttribute="bottom" secondItem="JeD-lc-XtW" secondAttribute="bottom" id="8gM-7o-Kln"/>
+                            <constraint firstItem="bE7-p7-NUO" firstAttribute="centerX" secondItem="FsP-Ry-qc3" secondAttribute="centerX" id="Lbx-4N-5rP"/>
+                            <constraint firstItem="bE7-p7-NUO" firstAttribute="leading" secondItem="JeD-lc-XtW" secondAttribute="leading" constant="24" id="N4A-3W-xlc"/>
+                            <constraint firstItem="uNP-sM-Gyq" firstAttribute="leading" secondItem="4ip-TE-TY1" secondAttribute="leading" id="NMO-Ht-zf2"/>
+                            <constraint firstItem="8Y0-zD-i36" firstAttribute="top" secondItem="uNP-sM-Gyq" secondAttribute="bottom" constant="43" id="TWe-74-RHn"/>
+                            <constraint firstItem="bE7-p7-NUO" firstAttribute="trailing" secondItem="K8b-8d-Yj8" secondAttribute="trailing" id="VQb-Yo-3LI"/>
+                            <constraint firstItem="bE7-p7-NUO" firstAttribute="top" secondItem="GnD-HA-qyv" secondAttribute="bottom" constant="13" id="Xaj-7R-fpl"/>
+                            <constraint firstItem="GnD-HA-qyv" firstAttribute="leading" secondItem="JeD-lc-XtW" secondAttribute="leading" id="bhd-8l-pn5"/>
+                            <constraint firstItem="GnD-HA-qyv" firstAttribute="centerX" secondItem="bE7-p7-NUO" secondAttribute="centerX" id="ky6-G4-Vsg"/>
+                            <constraint firstItem="uNP-sM-Gyq" firstAttribute="top" secondItem="K8b-8d-Yj8" secondAttribute="bottom" constant="14" id="mGo-Ea-48h"/>
+                            <constraint firstItem="K8b-8d-Yj8" firstAttribute="leading" secondItem="uNP-sM-Gyq" secondAttribute="leading" id="phl-uB-UBh"/>
+                            <constraint firstItem="GnD-HA-qyv" firstAttribute="leading" secondItem="8Y0-zD-i36" secondAttribute="leading" id="sjI-zl-YbN"/>
+                            <constraint firstItem="8Y0-zD-i36" firstAttribute="top" secondItem="4ip-TE-TY1" secondAttribute="bottom" constant="6" id="wzL-Hf-e2q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JeD-lc-XtW"/>
+                    </view>
+                    <connections>
+                        <outlet property="comicCollectionView" destination="8Y0-zD-i36" id="ftg-7Z-Tz9"/>
+                        <outlet property="lastAppearedInLabel" destination="4ip-TE-TY1" id="wt4-3G-ykZ"/>
+                        <outlet property="recruitToSquadButton" destination="K8b-8d-Yj8" id="MnK-vx-gFc"/>
+                        <outlet property="superheroDescriptionLabel" destination="uNP-sM-Gyq" id="paU-ON-hqJ"/>
+                        <outlet property="superheroImageView" destination="GnD-HA-qyv" id="k3a-Uf-gw0"/>
+                        <outlet property="superheroNameLabel" destination="bE7-p7-NUO" id="GYA-Jt-jCP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ndj-1G-y4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="-73.313343328335833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="130" height="130"/>
+        <image name="comic-default" width="584" height="815"/>
+        <image name="default" width="750" height="532"/>
+        <image name="icon-default" width="124" height="124"/>
+        <image name="ironman" width="1149" height="1182"/>
+        <image name="marvel-bg" width="1242" height="2208"/>
+        <image name="marvel-logo" width="102" height="41"/>
+        <image name="right-arrow" width="39" height="65"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="EIN-dl-cZp"/>
+    </inferredMetricsTieBreakers>
+</document>
